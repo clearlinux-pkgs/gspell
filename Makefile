@@ -1,4 +1,5 @@
 PKG_NAME := gspell
-URL := http://ftp.gnome.org/pub/GNOME/sources/gspell/1.6/gspell-1.6.1.tar.xz
+URL = https://download.gnome.org/sources/gspell/1.8/gspell-1.8.0.tar.xz
+ARCHIVES = 
 
 include ../common/Makefile.common

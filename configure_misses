@@ -1,6 +1,3 @@
-Configure miss: whether C compiler accepts -Werror=unknown-warning-option
-Configure miss: whether the linker accepts -Wl,-fatal_warnings
 Configure miss: vapigen
-Configure miss: whether to build with code coverage support
 Configure miss: Mac OS X platform
 Configure miss: native Mac OS X
