@@ -4,7 +4,7 @@
 #
 Name     : gspell
 Version  : 1.8.0
-Release  : 4
+Release  : 5
 URL      : https://download.gnome.org/sources/gspell/1.8/gspell-1.8.0.tar.xz
 Source0  : https://download.gnome.org/sources/gspell/1.8/gspell-1.8.0.tar.xz
 Summary  : Spell checking for GTK+
@@ -23,7 +23,7 @@ BuildRequires : gtk-doc-dev
 BuildRequires : libc6-locale
 BuildRequires : libxslt-bin
 BuildRequires : perl(XML::Parser)
-BuildRequires : pkgconfig(enchant-2)
+BuildRequires : pkgconfig(enchant)
 BuildRequires : pkgconfig(glib-2.0)
 BuildRequires : pkgconfig(gtk+-3.0)
 BuildRequires : pkgconfig(iso-codes)
