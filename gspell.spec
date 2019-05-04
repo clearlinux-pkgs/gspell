@@ -4,7 +4,7 @@
 #
 Name     : gspell
 Version  : 1.8.1
-Release  : 9
+Release  : 10
 URL      : https://download.gnome.org/sources/gspell/1.8/gspell-1.8.1.tar.xz
 Source0  : https://download.gnome.org/sources/gspell/1.8/gspell-1.8.1.tar.xz
 Summary  : a flexible API to implement the spell checking in a GTK+ application
@@ -107,8 +107,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552401312
-export LDFLAGS="${LDFLAGS} -fno-lto"
+export SOURCE_DATE_EPOCH=1557009659
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -120,7 +126,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 
 %install
-export SOURCE_DATE_EPOCH=1552401312
+export SOURCE_DATE_EPOCH=1557009659
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/gspell
 cp COPYING %{buildroot}/usr/share/package-licenses/gspell/COPYING
@@ -138,6 +144,8 @@ cp COPYING %{buildroot}/usr/share/package-licenses/gspell/COPYING
 %defattr(-,root,root,-)
 /usr/lib64/girepository-1.0/Gspell-1.typelib
 /usr/share/gir-1.0/*.gir
+/usr/share/vala/vapi/gspell-1.deps
+/usr/share/vala/vapi/gspell-1.vapi
 
 %files dev
 %defattr(-,root,root,-)
