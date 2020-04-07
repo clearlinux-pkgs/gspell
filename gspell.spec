@@ -4,7 +4,7 @@
 #
 Name     : gspell
 Version  : 1.8.3
-Release  : 12
+Release  : 13
 URL      : https://download.gnome.org/sources/gspell/1.8/gspell-1.8.3.tar.xz
 Source0  : https://download.gnome.org/sources/gspell/1.8/gspell-1.8.3.tar.xz
 Summary  : Spell-checking for GTK applications
@@ -107,14 +107,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1584555630
+export SOURCE_DATE_EPOCH=1586233486
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -127,7 +127,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 
 %install
-export SOURCE_DATE_EPOCH=1584555630
+export SOURCE_DATE_EPOCH=1586233486
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/gspell
 cp %{_builddir}/gspell-1.8.3/COPYING %{buildroot}/usr/share/package-licenses/gspell/5013d109e2fe11116d2b062bb46114a398276501
