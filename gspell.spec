@@ -4,7 +4,7 @@
 #
 Name     : gspell
 Version  : 1.8.4
-Release  : 14
+Release  : 15
 URL      : https://download.gnome.org/sources/gspell/1.8/gspell-1.8.4.tar.xz
 Source0  : https://download.gnome.org/sources/gspell/1.8/gspell-1.8.4.tar.xz
 Summary  : Spell-checking for GTK applications
