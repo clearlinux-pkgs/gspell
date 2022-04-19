@@ -1,5 +1,5 @@
 Configure miss: 32-bit host C ABI
 Configure miss: CFLocaleCopyPreferredLanguages
-Configure miss: Valgrind tool sgcheck
 Configure miss: Mac OS X platform
+Configure miss: Valgrind tool sgcheck
 Configure miss: native Mac OS X

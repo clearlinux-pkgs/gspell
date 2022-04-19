@@ -1,3 +1,10 @@
+News in 1.10.0, 2022-04-16
+--------------------------
+* Build from git: some updates, take newer version of autoconf-archive.
+* Build: distribute more files in tarballs.
+* Documentation improvements.
+* Translation updates.
+
 News in 1.9.1, 2020-10-10
 -------------------------
 * gspell_language_get_name() is now implemented with the ICU library, not with
