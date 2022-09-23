@@ -4,7 +4,7 @@
 #
 Name     : gspell
 Version  : 1.11.1
-Release  : 19
+Release  : 20
 URL      : https://download.gnome.org/sources/gspell/1.11/gspell-1.11.1.tar.xz
 Source0  : https://download.gnome.org/sources/gspell/1.11/gspell-1.11.1.tar.xz
 Summary  : Spell-checking for GTK applications
