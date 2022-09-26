@@ -4,7 +4,7 @@
 #
 Name     : gspell
 Version  : 1.11.1
-Release  : 20
+Release  : 21
 URL      : https://download.gnome.org/sources/gspell/1.11/gspell-1.11.1.tar.xz
 Source0  : https://download.gnome.org/sources/gspell/1.11/gspell-1.11.1.tar.xz
 Summary  : Spell-checking for GTK applications
@@ -104,7 +104,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1655160335
+export SOURCE_DATE_EPOCH=1664152535
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -124,10 +124,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 
 %install
-export SOURCE_DATE_EPOCH=1655160335
+export SOURCE_DATE_EPOCH=1664152535
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/gspell
-cp %{_builddir}/gspell-1.11.1/COPYING %{buildroot}/usr/share/package-licenses/gspell/5013d109e2fe11116d2b062bb46114a398276501
+cp %{_builddir}/gspell-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gspell/5013d109e2fe11116d2b062bb46114a398276501 || :
 %make_install
 %find_lang gspell-1
 
