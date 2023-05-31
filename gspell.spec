@@ -5,7 +5,7 @@
 #
 Name     : gspell
 Version  : 1.12.1
-Release  : 25
+Release  : 26
 URL      : https://download.gnome.org/sources/gspell/1.12/gspell-1.12.1.tar.xz
 Source0  : https://download.gnome.org/sources/gspell/1.12/gspell-1.12.1.tar.xz
 Summary  : Spell-checking for GTK applications
@@ -114,7 +114,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683817720
+export SOURCE_DATE_EPOCH=1685545722
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -144,7 +144,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 
 %install
-export SOURCE_DATE_EPOCH=1683817720
+export SOURCE_DATE_EPOCH=1685545722
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/gspell
 cp %{_builddir}/gspell-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gspell/5013d109e2fe11116d2b062bb46114a398276501 || :
@@ -172,7 +172,6 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/V3/usr/lib64/libgspell-1.so
 /usr/include/gspell-1/gspell/gspell-checker-dialog.h
 /usr/include/gspell-1/gspell/gspell-checker.h
 /usr/include/gspell-1/gspell/gspell-entry-buffer.h
@@ -231,7 +230,6 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libgspell-1.so.2
 /V3/usr/lib64/libgspell-1.so.2.3.2
 /usr/lib64/libgspell-1.so.2
 /usr/lib64/libgspell-1.so.2.3.2
