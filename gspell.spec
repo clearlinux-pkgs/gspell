@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : gspell
-Version  : 1.12.1
-Release  : 27
-URL      : https://download.gnome.org/sources/gspell/1.12/gspell-1.12.1.tar.xz
-Source0  : https://download.gnome.org/sources/gspell/1.12/gspell-1.12.1.tar.xz
+Version  : 1.12.2
+Release  : 28
+URL      : https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+Source0  : https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
 Summary  : Spell-checking for GTK applications
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -103,10 +103,10 @@ locales components for the gspell package.
 
 
 %prep
-%setup -q -n gspell-1.12.1
-cd %{_builddir}/gspell-1.12.1
+%setup -q -n gspell-1.12.2
+cd %{_builddir}/gspell-1.12.2
 pushd ..
-cp -a gspell-1.12.1 buildavx2
+cp -a gspell-1.12.2 buildavx2
 popd
 
 %build
@@ -114,7 +114,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685545722
+export SOURCE_DATE_EPOCH=1690813643
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -144,7 +144,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 
 %install
-export SOURCE_DATE_EPOCH=1685545722
+export SOURCE_DATE_EPOCH=1690813643
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/gspell
 cp %{_builddir}/gspell-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gspell/5013d109e2fe11116d2b062bb46114a398276501 || :
