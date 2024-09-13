@@ -7,7 +7,7 @@
 #
 Name     : gspell
 Version  : 1.13.2
-Release  : 31
+Release  : 32
 URL      : https://download.gnome.org/sources/gspell/1.13/gspell-1.13.2.tar.xz
 Source0  : https://download.gnome.org/sources/gspell/1.13/gspell-1.13.2.tar.xz
 Summary  : No detailed summary available
